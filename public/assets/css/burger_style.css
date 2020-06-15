@@ -1,0 +1,13 @@
+body {
+	background-color: #F5B041;
+	margin-top: 20px;
+}
+
+img {
+	width: 200px;
+	height: auto;
+}
+
+.input-group {
+	margin: 20px;
+}
