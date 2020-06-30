@@ -2,7 +2,6 @@ var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger.js");
 
-// create burger
 router.post("/", function(req, res) {
   burger.insertOne([
     req.body.name
@@ -11,7 +10,6 @@ router.post("/", function(req, res) {
   });
 });
 
-// devour burger
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
   console.log("condition", condition);
@@ -27,7 +25,6 @@ router.put("/:id", function(req, res) {
   });
 });
 
-// delete burger
 router.delete("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
